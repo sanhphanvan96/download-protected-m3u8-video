@@ -24,12 +24,12 @@ async function getTsUrl(num) {
         function (_token) {
             {
                 var c = "";
-                var base64characters = "123456780ABCDEFGHKLMNOPYTRQW";
+                var characters = "123456780ABCDEFGHKLMNOPYTRQW";
                 for (var i = 0; i < _token.length; i++) {
                     if (i % 2 == 0) {
                         c += _token[i]
                     } else {
-                        c += base64characters[Math.floor((Math.random() * base64characters.length))];
+                        c += characters[Math.floor((Math.random() * characters.length))];
                         c += _token[i]
                     }
                 };
